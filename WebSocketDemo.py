@@ -9,9 +9,8 @@ def lambda_handler(event, context):
 	
 	# generate random id for dynamodb table
 	RandomId = randrange(5)
-        return RandomId
 	
-	# Get Item By Id
+	# Example - Get Item By Id
 	response = table.get_item(
 		Key={
 			'Id' : RandomId
